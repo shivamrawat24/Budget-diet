@@ -1,0 +1,132 @@
+/* AUTH PAGES */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.login-form-wrapper {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form-wrapper h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.login-form {
+  margin-bottom: 20px;
+}
+
+.toggle-auth {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.features-highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-highlight h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.features-highlight ul {
+  list-style: none;
+}
+
+.features-highlight li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* PROFILE TAB */
+.profile-tab {
+  max-width: 600px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #2196F3;
+}
+
+.detail-row .label {
+  font-weight: 600;
+  color: #666;
+  flex: 0 0 200px;
+}
+
+.detail-row .value {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .login-form-wrapper {
+    padding: 30px 20px;
+  }
+
+  .features-highlight {
+    padding: 30px 20px;
+  }
+
+  .features-highlight h2 {
+    font-size: 20px;
+  }
+
+  .features-highlight li {
+    font-size: 14px;
+  }
+}
